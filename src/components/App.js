@@ -8,11 +8,12 @@ function App() {
   const [data, setData] = useState(pokemons);
 
   return (
-    <ul>
-      <div>
+    <div>
+      <h1 className="title">Mi lista de pokemon</h1>
+      <ul>
         <PokeList list={data} />
-      </div>
-    </ul>
+      </ul>
+    </div>
   );
 }
 

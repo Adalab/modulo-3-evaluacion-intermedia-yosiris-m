@@ -1,6 +1,4 @@
-.listPokemon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
+.title {
+  text-align: center;
+  margin: 20px 0;
 }

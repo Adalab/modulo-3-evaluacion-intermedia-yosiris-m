@@ -1,4 +1,4 @@
-import "../stylesheets/App.css";
+import "../stylesheets/PokeList.css";
 import React from "react";
 import Pokemon from "./Pokemon";
 
