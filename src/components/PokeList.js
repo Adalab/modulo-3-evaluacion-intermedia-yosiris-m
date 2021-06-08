@@ -1,3 +1,4 @@
+import "../stylesheets/App.css";
 import React from "react";
 import Pokemon from "./Pokemon";
 
@@ -6,7 +7,7 @@ const PokeList = (props) => {
     return <Pokemon key={index} item={item} />;
   });
 
-  return <ul>{listPoke}</ul>;
+  return <ul className="listPokemon">{listPoke}</ul>;
 };
 
 export default PokeList;
