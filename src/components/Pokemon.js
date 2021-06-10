@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../stylesheets/Pokemon.css";
 
 const Pokemon = (props) => {
@@ -8,12 +9,15 @@ const Pokemon = (props) => {
   ));
 
   return (
-    <li className="pokemon">
-      <img src={props.item.url} />
+    <div className="pokemon">
+      <img src={props.item.url} alt="pokemon" />
       <div className="pokemonName">{props.item.name}</div>
       <ul className="pokemonTypeList">{types}</ul>
-    </li>
+    </div>
   );
+};
+Pokemon.propTypes = {
+  name: PropTypes.string,
 };
 
 export default Pokemon;
