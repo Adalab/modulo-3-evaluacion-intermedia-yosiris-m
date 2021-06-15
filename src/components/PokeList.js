@@ -4,7 +4,7 @@ import Pokemon from "./Pokemon";
 
 const PokeList = (props) => {
   const listPoke = props.list.map((item, index) => {
-    return <Pokemon key={index} item={item} />;
+    return <Pokemon key={index} item={item} onFavorite={props.onFavorite} />;
   });
 
   return <ul className="listPokemon">{listPoke}</ul>;
